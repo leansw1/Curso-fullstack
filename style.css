@@ -1,0 +1,64 @@
+.navbar> .container-fluid> .collapse {
+    justify-content: end;
+}
+
+.navbar> .container-fluid> .collapse >.navbar-nav >.nav-item> .btn {
+   color: green;
+}
+
+#carouselExampleControls> .carousel-inner> .carousel-item> .carousel-caption {
+    margin-left: 30%;
+    margin-bottom: 20%;
+    color: #fff;
+    text-align: right;
+}
+
+#carouselExampleControls> .carousel-inner> .carousel-item > img{
+    filter: brightness(50%);       
+}
+
+.row> .col> .card{
+    width: 85%; 
+}
+
+.row> .col{
+    display: flex;
+    justify-content: center;
+}
+
+
+.row> .col> .card> .card-body> #botoncitos> .btn{
+    width: 75px;
+    height: 15px;
+    font-size: x-small;
+    justify-content: center;
+    text-decoration: solid;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+    
+}
+
+#form> .btn {
+    background-color: rgb(76, 204, 37);
+    color: white;
+}
+
+#form {
+   margin-left: 25%;
+   margin-right: 25%;
+}
+
+.footer> .container-fluid >.footer-link {
+color: white;
+font-family: "Lato", sans-serif;
+font-weight: bold;
+
+}
+
+.footer > .container-fluid {
+    background-color: #1d5271;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    padding-top: 2%;
+}
