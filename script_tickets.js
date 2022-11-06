@@ -5,7 +5,7 @@ function calcular() {
     var descuento = 0;
     var precio_ticket = 200;
         
-    if(cantidad > 0) {
+    if(cantidad > 0 && (categoria == 1 || categoria == 2 || categoria == 3)) {
         switch(categoria) {
             case 1:
                 descuento = 0.80; 
@@ -27,8 +27,8 @@ function calcular() {
         document.getElementById("container-resume").innerHTML = "Total a pagar: " + total + "$";  
        
     } else {
-        alert("La cantidad ingresada es incorrecta, cantidad minima de compra: 1 ");        
-    }     
+        alert("La cantidad o categoria ingresada es invalida (minimo de compra 1 entrada)");        
+    } 
 }
 
 function reestablecer(){
@@ -37,4 +37,6 @@ function reestablecer(){
     document.getElementById("correo").value = document.getElementById("correo").ariaPlaceholder;
     document.getElementById("cantidad_tickets").value = document.getElementById("cantidad_tickets").ariaPlaceholder;
     document.getElementById("categoria").value = document.getElementById("categoria").ariaLabel;
+    document.getElementById("container-resume").innerHTML = "Total a pagar:";  
 }
+
